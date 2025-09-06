@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Login System</title>
+  <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-custom">
+  <div class="container">
+    <div class="row mt-5">
+  <div class="col-md-8  text-white bg-custom p-4 shadow-lg p-3 mb-5 rounded-5 mx-auto" >
+    <h2 class="text-info text-center mb-4 fs-1 fm-">Smart Login System</h2>
+      <div class="mb-3">
+        <input type="email" id="loginEmail" class="form-control bg-custom text-white" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <input type="password" id="loginPassword" class="form-control bg-custom text-white" placeholder="Enter your password" required>
+      </div>
+      <div class="mb-3 text-center" id="errorMsg">
+      </div>
+      <div class="d-grid mb-3">
+        <button type="submit" class="btn btn-outline-info" onclick="login()">Login</button>
+      </div>
+      <div class="text-center">
+        Don’t have an account? <a href="signup.html" class="text-info text-decoration-underline">Sign Up</a>
+      </div>
+    
+    </div>
+  </div>
+  </div>
+
+  <script src="js/login.js" defer></script>
+  <script src="js/common.js" defer></script>
+</body>
+
+</html>
