@@ -11,6 +11,8 @@ let deleteUsername      = "";
       usersTable.innerHTML = "";
       for (let i = 0; i < localStorage.length; i++) {
         const key   = localStorage.key(i);// Email
+        if(key!="currentLoginUser")
+        {
         const user  = JSON.parse(localStorage.getItem(key));
         const row   = document.createElement("tr");
         row.innerHTML = `
@@ -40,6 +42,7 @@ let deleteUsername      = "";
         });
       }
     }
+  }
     document.getElementById("confirmDeleteBtn").addEventListener("click", () => {
     localStorage.removeItem(deleteKey);
     displayUsers();
